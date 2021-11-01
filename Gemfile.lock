@@ -66,6 +66,7 @@ DEPENDENCIES
   capybara
   rspec
   sinatra
+  sinatra-contrib
   sinatra-reloader
 
 BUNDLED WITH
