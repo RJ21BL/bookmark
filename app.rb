@@ -10,5 +10,14 @@ class BookmarkManager < Sinatra::Base
     'Bookmark manager'
   end
 
+  get '/bookmarks' do
+    @bookmarks = [
+      'https://www.bstacademy.co.uk/',
+      'https://www.utcuk.com/'
+    ]
+
+    erb :'bookmarks/index'
+  end
+
   run! if app_file == $0
 end
